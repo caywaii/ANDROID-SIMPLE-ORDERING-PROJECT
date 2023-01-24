@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/menubgs">
+
+<!--    PIZZA TEXT VIEW-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+<!--    PIZZA RADIOBUTTON-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="-15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </TextView>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rgPizza">
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/rbSmall">
+    </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/rbMedium">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/rbLarge">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumbo"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/rbJumbo">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <!--PIZZA TOPPINGS-->
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="-25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings:"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+        </TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mushroom"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cMushroom">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onions"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cOnion">
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olive"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cOlive">
+        </CheckBox>
+
+    </LinearLayout>
+
+<!--    CONTINUATION PIZZA TOPPINGS-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="93dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sausage"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cSausage">
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cPepperoni">
+        </CheckBox>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Cheese"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/cMoreCheese">
+        </CheckBox>
+    </LinearLayout>
+
+<!--    QUANTITY OF PIZZA-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/quantityPizza"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:textColor="@color/black">
+
+        </EditText>
+    </LinearLayout>
+<!--    PRIZE OF PIZZA-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Small Pizza (75 PHP), Medium Pizza (150 PHP), Large Pizza (250 PHP),  Jumbo Pizza (400 PHP). Plus 20 for each additional topping!">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"/>
+    <!--    BURGER TEXT VIEW-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <!--    BURGER RADIOBUTTON-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rgBurger">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Burger"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbChickBurg"
+               >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beef Burger"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbBeefBurg">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbVegetarian">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <!--BURGER TOPPINGS-->
+    </LinearLayout>
+
+    <!--    QUANTITY OF BURGER-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/edittext"
+            android:id="@+id/quantityBurger">
+
+        </EditText>
+    </LinearLayout>
+    <!--    PRIZE OF BURGER-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Chicken Burger (50 PHP), Beef Burger (75 PHP), Vegetarian (60 PHP)">
+
+        </TextView>
+    </LinearLayout>
+    <!--    BEVERAGES TEXT VIEW-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beverages"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <!--    BEVERAGES RADIOBUTTON-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type:"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rgBeveragesType">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coke"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbCoke"
+               >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sprite"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbSprite">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Royal"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbRoyal">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coffee"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbCoffee">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tea"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbTea">
+
+            </RadioButton>
+        </RadioGroup>
+
+        <!--BURGER TOPPINGS-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size:"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/rgBeveragesSize">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbReg">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbBLarge">
+
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--    QUANTITY OF BURGER-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity:"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:textAlignment="center"
+            android:background="@drawable/edittext"
+            android:id="@+id/quantityBeverages">
+
+        </EditText>
+    </LinearLayout>
+    <!--    PRIZE OF BURGER-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Coke/Sprite/Royal (REGULAR: 35 PHP and LARGE: 50 PHP), COFFEE (REGULAR: 30 PHP and LARGE: 50 PHP), TEA (REGULAR: 25 PHP and LARGE 40 PHP)">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode of Payment:"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rgPayment">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbCash"
+                >
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GCash/Debit"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbGDebit">
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/rbCredit">
+
+            </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:id="@+id/btnOrder">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
